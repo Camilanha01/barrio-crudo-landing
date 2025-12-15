@@ -1,0 +1,216 @@
+/*===== GENERAL =====*/
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h2, h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold !important;
+}
+
+strong {
+    color: #2867ab;
+}
+
+em {
+    color: #555; 
+    font-style: italic;
+}
+
+/*===== NAVBAR Y LOGO =====*/
+
+a.logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+a.logo span {
+    color: #2867ab;
+}
+
+a.logo {
+    color: white !important;
+}
+
+nav#navbar {
+    background-color: #292929 !important;
+}
+
+a.nav-link{
+    color: white !important;
+    font-weight: bold;
+}
+.navbar-toggler {
+    border-color: white !important;
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ===== ÍCONOS ===== */
+i#icon-alumno {
+    color: #2867ab;
+}
+
+/*para que el icon desasparesca*/
+i span{
+    font-size: 0;
+}
+
+/* ===== QUÉ OFRECEMOS ===== */
+#que-ofrecemos ul li{
+    list-style: none;
+    border-color: #292929 !important;
+}
+
+/* ===== PRODUCTOS ===== */
+#productos button {
+    border: none;
+    text-decoration: none;
+}
+
+/* ===== GALERÍA ===== */
+.text-galeria {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* zoom img galeria */
+.zoom-hover {
+    transition: transform 0.4s ease;
+}
+
+.zoom-hover:hover {
+    transform: scale(1.05);
+}
+
+/* ===== FORMULARIO ===== */
+form input, 
+form textarea{
+    outline: 2px solid #3b3d34;
+}
+input:focus, textarea:focus{
+    border-color: transparent  !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5) !important;
+}
+
+#consulta{
+    height: 150px; 
+    resize: none
+}
+
+/* ===== FOOTER =====*/
+footer {
+    background-color: #292929;
+    color: white;
+}
+
+/* ===== MODAL: ALUMNA ===== */
+.modal-body ul{
+    padding: 1.3em;
+    margin: 0;
+}
+
+.modal-body ul li, 
+.modal-body ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: #292929;
+    font-weight: 500;
+    line-height: 1.8em;
+    text-align: center;
+}
+.modal-body ul li:first-child{
+    font-size: 2em;
+    border-bottom: 2px solid #292929;
+    margin-bottom: .5em;
+}
+
+#modal_alumna .modal-body {
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-header{
+    background-color: #2867ab;
+}
+
+.modal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-redes {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.modal-redes a {
+    font-size: 1.8em;
+    color: #292929;
+    margin: 0 0.5em;
+    transition: color 0.3s;
+}
+
+.modal-redes a:hover {
+    color: #2867ab;
+}
+
+/* ===== MEDIA QUERIES =====*/
+@media screen and (min-width: 992px) {
+
+    #productos .container article:hover{
+        transform: scale(1.1);
+        transition: 1s;
+    } 
+    #modal_alumna .modal-body{
+        flex-direction: row;          
+        justify-content: center;
+    } 
+    .modal-body figure{
+        margin: 0;
+    }
+}
+
+/*===== MENÚ RESPONSIVE ===== */
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .hamburger:hover {
+        background-color: #555;
+    }
+}
+
+
+
+
+
+
+
+
+
